@@ -1,0 +1,10 @@
+{
+  "include": [
+    "fixtures/**/*.ts", 
+    "pages/**/*.ts", 
+    "tests/**/*.ts"
+  ], 
+  "exclude": [
+    "node_modules"
+  ]
+} 
