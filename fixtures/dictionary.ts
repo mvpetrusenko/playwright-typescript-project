@@ -1,11 +1,19 @@
 export const drugs = {
   ascorbine: 'аскорбінка', 
   ascorbineFullName: 'Аскорбінка®-КВ таблетки 25 мг в етикетці зі смаком полуниці, №10', 
+  lessThree: 'ас', 
+  highlightedTermUa: 'РІЗ', 
+  highlightedTermRu: 'РИЗ',
   substringPrice: ' грн', 
   quantityMore: '1', 
   quantityLess: '0'
 
 } 
+
+export const messages = {
+  minSearchRequestUa: 'Для пошуку введіть мінімум 3 символи', 
+  minSearchRequestRu: 'Для пошуку введіть мінімум 3 символи'
+}
 
 export const components = {
   categories: 'Розділи ', 

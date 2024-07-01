@@ -241,7 +241,9 @@ export const numbersArray = {
 export const searchResultsPage = {
     addToFavorite: '[data-e2e="components.ui.ButtonFavorite"]:nth-of-type(1)', 
     tabSelectedDrugsButton: '[data-e2e="layout.header.btnFavorites"]', 
-    addedDrug: 'div[class="cp-card"]'
+    addedDrug: 'div[class="cp-card"]', 
+    drugPhoto: '[data-e2e="ui.drugItem"] a', 
+    searchMessage: '[class="cp-search-list__message"]'
 } 
 
 export const medExpertProfilePage = {
