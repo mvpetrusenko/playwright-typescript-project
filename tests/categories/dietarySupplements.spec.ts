@@ -7,7 +7,7 @@ test.describe('Dietary Supplements Category Tests', () => {
         await navigatorTo(page);
       });
   
-    test('NC-TC-899 Navigate Active Substance Alphabet Pagination Tabs', async ({ page }) => {
+    test('NC-TC-529 Change GeoLocation on Third Subcategory Drug Page', async ({ page }) => {
      
 
     });
