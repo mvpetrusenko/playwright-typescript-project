@@ -1,5 +1,6 @@
-export const mainPage = {
-    inputSearch: 'input#searchInput', 
+export const mainPage = { 
+    logo: '[data-e2e="components.layout.logoDesktopGrd"]',
+    inputSearch: 'input#searchInput:nth-of-type(1)', 
     buttonSearch: 'button.cp-form-group-search-btn-grd', 
     buttonAddress: '[data-e2e="layout.header.btnAddress"]', 
     buttonChangeCity: '[class="cp-drawer-city__address-navigation"] [class*="cp-btn"]', 
@@ -243,7 +244,9 @@ export const searchResultsPage = {
     tabSelectedDrugsButton: '[data-e2e="layout.header.btnFavorites"]', 
     addedDrug: 'div[class="cp-card"]', 
     drugPhoto: '[data-e2e="ui.drugItem"] a', 
-    searchMessage: '[class="cp-search-list__message"]'
+    searchMessage: '[class="cp-search-list__message"]', 
+    closeSearchBoxItem: '[class*="cp-input-search-icon-close-grd"]', 
+    dropDownSearchResult: '[class*="cp-search-list__container"]'
 } 
 
 export const medExpertProfilePage = {

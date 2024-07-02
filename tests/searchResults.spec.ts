@@ -31,19 +31,40 @@ test.describe('Search Results Tests', () => {
 
   test('NC-TC-257: Auotocomplition < 3 Symbols', async ({ page }) => { 
     await baseSearch(page, drugs.lessThree); 
-    //await expect(page.locator(searchResultsPage.searchMessage)).toBeVisible(); 
     expect(await page.textContent(searchResultsPage.searchMessage)).toContain(messages.minSearchRequestUa); 
+    await page.click(mainPage.buttonSearch);
 
     await changeLocalization(page, 'ru'); 
     await baseSearch(page, drugs.lessThree); 
-    //await expect(page.locator(searchResultsPage.searchMessage)).toBeVisible(); 
-    expect(await page.textContent(searchResultsPage.searchMessage)).toContain(messages.minSearchRequestUa); 
+    expect(await page.textContent(searchResultsPage.searchMessage)).toContain(messages.minSearchRequestRu); 
 
+}); 
 
-     
+test('NC-TC-278: Clear Search Input Field', async ({ page }) => { 
+  await baseSearch(page, drugs.ascorbine); 
+  await page.click(searchResultsPage.closeSearchBoxItem); 
+  await page.waitForTimeout(1000);
+  let value = await page.locator(mainPage.inputSearch).nth(1).inputValue(); 
+  expect(value).toBe('');
  
 
-});
+}); 
+
+
+test('NC-TC-258: Auotocomplition 3 Symbols', async ({ page }) => { 
+  await baseSearch(page, drugs.threeSymbolsUa); 
+  expect(await page.textContent(searchResultsPage.searchMessage)).toContain(messages.searchMessageUa); 
+  await expect(page.locator(searchResultsPage.searchMessage)).toBeHidden();
+  expect(await page.textContent(searchResultsPage.dropDownSearchResult)).toContain(drugs.highlightedTermUa); 
+  await page.click(mainPage.buttonSearch);
+
+  await changeLocalization(page, 'ru'); 
+  await baseSearch(page, drugs.threeSymbolsRu); 
+  expect(await page.textContent(searchResultsPage.searchMessage)).toContain(messages.searchMessageRu); 
+  await expect(page.locator(searchResultsPage.searchMessage)).toBeHidden();
+  expect(await page.textContent(searchResultsPage.dropDownSearchResult)).toContain(drugs.highlightedTermRu); 
+
+}); 
   
     test.afterEach(async ({ page }) => {
         await page.close();
