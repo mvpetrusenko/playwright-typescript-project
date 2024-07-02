@@ -1,5 +1,5 @@
 import { Page, expect } from '@playwright/test'; 
-import { atcPage, babyFoodPage, categories, mainPage } from '../fixtures/selectors'; 
+import { babyFoodPage, categories, mainPage } from '../fixtures/selectors'; 
 import { components } from '../fixtures/dictionary';
 
 

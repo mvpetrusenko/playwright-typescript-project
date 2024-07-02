@@ -28,9 +28,11 @@ export const components = {
   news: 'Рання діагностика когнітивних порушень та деменції. Фармакотерапія деменції', 
   allNews: 'Новини медицини та фармації', 
   atc: 'ATC-класифікація', 
-  babyFood: 'Дитяче харчування',
+  babyFood: 'Дитяче харчування', 
+  dietarySupplements: 'Класифікація дієтичних добавок', 
   thirdSubcategoryNodeAtc: 'A02A', 
-  thirdSubcategoryNodeBabyFood: "М'ясні пюре (1 інгредієнт)"
+  thirdSubcategoryNodeBabyFood: "М'ясні пюре (1 інгредієнт)", 
+  thirdSubcategoryNodeDietarySupplements: 'Дієтичні добавки, що містять цинк 3.1.11.  Класифікація'
 } 
 
 export const tabs = {

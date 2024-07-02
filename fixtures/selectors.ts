@@ -169,6 +169,14 @@ export const babyFoodPage = {
     arrowToThirdCategoryBabyFood: '[data-e2e="components.nodes.node.bfc"]:nth-of-type(1)'
     
 } 
+
+export const dietarySupplementsPage = {
+    dietarySupplementsClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(3)', 
+    thirdSubcategory: '[data-e2e="components.nodes.node.fsc"] [href="/uk/bad/000700020000000a/"]', 
+    arrowToSecondSubCategoryDietarySupplements: '[data-e2e="components.nodes.rootNode.fsc"] [href="/uk/bad/00070002/"]', 
+    arrowToThirdCategoryDietarySupplements: '[data-e2e="components.nodes.node.fsc"] [href="/uk/bad/000700020000/"]'
+    
+} 
     
 
 export const newsPage = {
