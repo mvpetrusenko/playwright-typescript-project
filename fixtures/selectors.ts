@@ -189,7 +189,7 @@ export const cosmeticsPage = {
 
 export const medicalProductsPage = {
     medicalProductsClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(7)', 
-    thirdSubcategory: '[href="/uk/med/000d000000000000/', 
+    thirdSubcategory: '[href="/uk/med/000d000000000000/"]', 
     arrowToSecondSubCategoryMedicalProducts: '[data-e2e="components.nodes.rootNode.mpc"] [href="/uk/med/000d0000/"]', 
     arrowToThirdCategoryMedicalProducts: '[data-e2e="components.nodes.node.mpc"] [href="/uk/med/000d00000000/"]'
     

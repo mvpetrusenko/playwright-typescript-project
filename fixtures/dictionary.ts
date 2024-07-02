@@ -34,9 +34,9 @@ export const components = {
   medicalProducts: 'Медичні вироби', 
   thirdSubcategoryNodeAtc: 'A02A', 
   thirdSubcategoryNodeBabyFood: "М'ясні пюре (1 інгредієнт)", 
-  thirdSubcategoryNodeDietarySupplements: 'Дієтичні добавки, що містять цинк 3.1.11.  Класифікація', 
-  thirdSubcategoryNodeCosmetics: 'Дезодоранти 2.6.1.  Класифікація', 
-  thirdSubcategoryNodeMedicalProducts: 'fff'
+  thirdSubcategoryNodeDietarySupplements: 'Дієтичні добавки, що містять цинк', 
+  thirdSubcategoryNodeCosmetics: 'Дезодоранти', 
+  thirdSubcategoryNodeMedicalProducts: 'Дзеркала гінекологічні'
 
 } 
 
