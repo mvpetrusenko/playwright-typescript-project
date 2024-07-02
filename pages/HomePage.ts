@@ -6,7 +6,7 @@ import { components } from '../fixtures/dictionary';
 import { mainRoutes } from '../fixtures/routes'; 
 
 
-export async function changeGeoLocation(page: Page, city: string) { 
+export async function changeGeoLocationPricesPage(page: Page, city: string) { 
 
   await page.waitForSelector(mainPage.buttonAddress, { state: 'visible' });
   await page.click(mainPage.buttonAddress); 

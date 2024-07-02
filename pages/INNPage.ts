@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test'; 
-import { cyrillicLettersArray, innPage, mainPage } from '../fixtures/selectors'; 
+import { categories, cyrillicLettersArray, innPage, mainPage } from '../fixtures/selectors'; 
 
 
 type LettersArrayKey = keyof typeof cyrillicLettersArray;
@@ -20,7 +20,7 @@ export async function navigatingInnTabs(page: Page) {
   await page.click(innPage.innClassification); 
   await page.waitForSelector(randomKey, { state: 'visible' });
   await page.click(randomKey); 
-  await page.waitForSelector(innPage.homeBreadcrumbs, { state: 'visible' });
+  await page.waitForSelector(categories.homeBreadcrumbs, { state: 'visible' });
 }
 
 

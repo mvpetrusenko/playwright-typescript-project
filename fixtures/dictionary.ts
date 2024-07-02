@@ -22,9 +22,13 @@ export const messages = {
 export const components = {
   categories: 'Розділи ', 
   downloadMore: 'Завантажити ще', 
-  city: 'Сергіївка', 
+  citySmall: 'Сергіївка', 
+  city1: 'Дніпро', 
+  city2: 'Київ',
   news: 'Рання діагностика когнітивних порушень та деменції. Фармакотерапія деменції', 
-  allNews: 'Новини медицини та фармації'
+  allNews: 'Новини медицини та фармації', 
+  atc: 'ATC-класифікація', 
+  thirdSubcategoryNodeAtc: 'A02A'
 } 
 
 export const tabs = {

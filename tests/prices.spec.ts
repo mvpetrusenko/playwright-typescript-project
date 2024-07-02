@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { changeGeoLocation, navigatorTo } from '../pages/HomePage'; 
+import { changeGeoLocationPricesPage, navigatorTo } from '../pages/HomePage'; 
 import { goToPricesPage } from '../pages/PricesPage';
 import { basketPage, pricesPage } from '../fixtures/selectors';
 import { components, drugs, sorting, tabs } from '../fixtures/dictionary'; 
@@ -45,7 +45,7 @@ test.describe('Prices Tests', () => {
     test('NC-TC-127: Verify UI Drugstores List If < 20', async ({ page }) => {
 
         await goToPricesPage(page); 
-        await changeGeoLocation(page, components.city); 
+        await changeGeoLocationPricesPage(page, components.citySmall); 
         expect(await page.textContent(pricesPage.tabInOhterCities)).toContain(tabs.inOtherCities); 
 
     }); 

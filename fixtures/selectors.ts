@@ -137,11 +137,30 @@ export const mapPage = {
     tabMap: '[class*="cp-tabs__active-item"]'
 }
 
+export const categories = { 
+    homeBreadcrumbs: '[data-e2e="components.ui.breadcrumbs.breadcrumbsItem"]:nth-of-type(1)', 
+    breadcrumbCategory: '[class*="cp-breadcrumbs__list-link-item"]',
+    arrowToSecondSubCategory: '[data-e2e="components.nodes.rootNode.atc"]:nth-of-type(1)', 
+    arrowToThirdCategory: '[data-e2e="components.nodes.node.atc"] [href="/uk/atc/a02/"]', 
+    nodeDetail: '[class="cp-page-node-detail__head-code"]', 
+    quantityInDrugStores: '[class="cp-drug-item__quantity-in-pharmacies-text"]:nth-of-type(1)', 
+    minPriceFrom: '[class*="cp-text-lg"]:nth-of-type(1)'
+}
+
+
+
 export const innPage = {
     innClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(2)', 
-    homeBreadcrumbs: '[data-e2e="components.ui.breadcrumbs.breadcrumbsItem"]:nth-of-type(1)', 
     activeLetter: 'a[class*="cp-alphabet-list__link-active"]'
+}
+
+export const atcPage = {
+    atcnClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(1)', 
+    atcLetter: '[class*="cp-mega-menu__item-category"]', 
+    thirdSubcategory: '[href="/uk/atc/a02a/"]'
+    
 } 
+    
 
 export const newsPage = {
     newsArticleTitle: '[class="cp-page-title"]', 
