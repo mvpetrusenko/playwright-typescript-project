@@ -177,6 +177,23 @@ export const dietarySupplementsPage = {
     arrowToThirdCategoryDietarySupplements: '[data-e2e="components.nodes.node.fsc"] [href="/uk/bad/000700020000/"]'
     
 } 
+
+
+export const cosmeticsPage = {
+    cosmeticsClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(4)', 
+    thirdSubcategory: '[href="/uk/kos/0009000100050000/"]', 
+    arrowToSecondSubCategoryCosmetics: '[data-e2e="components.nodes.rootNode.csc"] [href="/uk/kos/00090001/"]', 
+    arrowToThirdCategoryCosmetics: '[data-e2e="components.nodes.node.csc"] [href="/uk/kos/000900010005/"]'
+    
+} 
+
+export const medicalProductsPage = {
+    medicalProductsClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(7)', 
+    thirdSubcategory: '[href="/uk/med/000d000000000000/', 
+    arrowToSecondSubCategoryMedicalProducts: '[data-e2e="components.nodes.rootNode.mpc"] [href="/uk/med/000d0000/"]', 
+    arrowToThirdCategoryMedicalProducts: '[data-e2e="components.nodes.node.mpc"] [href="/uk/med/000d00000000/"]'
+    
+} 
     
 
 export const newsPage = {

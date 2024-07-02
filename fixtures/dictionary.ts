@@ -30,9 +30,14 @@ export const components = {
   atc: 'ATC-класифікація', 
   babyFood: 'Дитяче харчування', 
   dietarySupplements: 'Класифікація дієтичних добавок', 
+  cosmetics: 'Класифікація косметичних засобів', 
+  medicalProducts: 'Медичні вироби', 
   thirdSubcategoryNodeAtc: 'A02A', 
   thirdSubcategoryNodeBabyFood: "М'ясні пюре (1 інгредієнт)", 
-  thirdSubcategoryNodeDietarySupplements: 'Дієтичні добавки, що містять цинк 3.1.11.  Класифікація'
+  thirdSubcategoryNodeDietarySupplements: 'Дієтичні добавки, що містять цинк 3.1.11.  Класифікація', 
+  thirdSubcategoryNodeCosmetics: 'Дезодоранти 2.6.1.  Класифікація', 
+  thirdSubcategoryNodeMedicalProducts: 'fff'
+
 } 
 
 export const tabs = {

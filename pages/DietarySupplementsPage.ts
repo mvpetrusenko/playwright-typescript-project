@@ -14,14 +14,8 @@ export async function goToDietarySupplementsPage(page: Page) {
 
 export async function goToThirdSubCategoryDietarySupplementsPage(page: Page) { 
 
-    //await page.waitForTimeout(1000);
-    //await page.waitForSelector(dietarySupplementsPage.arrowToSecondSubCategoryDietarySupplements, { state: 'visible' });
     await page.click(dietarySupplementsPage.arrowToSecondSubCategoryDietarySupplements); 
-    //await page.waitForTimeout(1000);
-    //await page.waitForSelector(dietarySupplementsPage.arrowToThirdCategoryDietarySupplements, { state: 'visible' });
     await page.click(dietarySupplementsPage.arrowToThirdCategoryDietarySupplements); 
-    //wait page.waitForTimeout(1000);
-    //await page.waitForSelector(dietarySupplementsPage.thirdSubcategory, { state: 'visible' });
     await page.click(dietarySupplementsPage.thirdSubcategory);
     expect(await page.textContent(categories.pageTitleThirdSubcategory)).toContain(components.thirdSubcategoryNodeDietarySupplements); 
     
