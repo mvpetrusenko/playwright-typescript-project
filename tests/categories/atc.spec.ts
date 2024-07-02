@@ -1,10 +1,9 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { navigatorTo } from '../../pages/HomePage'; 
-import { changeGeoLocationCategoriesPage, compareQuantityInDrugStores, goToAtcPage, goToThirdSubCategoryAtcPage } from '../../pages/ATCPage'; 
+import { goToAtcPage, goToThirdSubCategoryAtcPage } from '../../pages/ATCPage'; 
+import { changeGeoLocationCategoriesPage, compareDrugInfo } from '../../pages/CategoriesPage'; 
 import { components } from '../../fixtures/dictionary'; 
-import { atcPage, categories } from '../../fixtures/selectors'; 
 
- 
 
 test.describe('ATC Category Tests', () => {
     test.beforeEach(async ({ page }) => {
@@ -16,7 +15,7 @@ test.describe('ATC Category Tests', () => {
         await goToAtcPage(page); 
         await goToThirdSubCategoryAtcPage(page);
         await changeGeoLocationCategoriesPage(page, components.city1); 
-        await compareQuantityInDrugStores(page);
+        await compareDrugInfo(page);
      
 
     });

@@ -28,7 +28,9 @@ export const components = {
   news: 'Рання діагностика когнітивних порушень та деменції. Фармакотерапія деменції', 
   allNews: 'Новини медицини та фармації', 
   atc: 'ATC-класифікація', 
-  thirdSubcategoryNodeAtc: 'A02A'
+  babyFood: 'Дитяче харчування',
+  thirdSubcategoryNodeAtc: 'A02A', 
+  thirdSubcategoryNodeBabyFood: "М'ясні пюре (1 інгредієнт)"
 } 
 
 export const tabs = {

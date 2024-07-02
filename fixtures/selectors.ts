@@ -140,11 +140,11 @@ export const mapPage = {
 export const categories = { 
     homeBreadcrumbs: '[data-e2e="components.ui.breadcrumbs.breadcrumbsItem"]:nth-of-type(1)', 
     breadcrumbCategory: '[class*="cp-breadcrumbs__list-link-item"]',
-    arrowToSecondSubCategory: '[data-e2e="components.nodes.rootNode.atc"]:nth-of-type(1)', 
-    arrowToThirdCategory: '[data-e2e="components.nodes.node.atc"] [href="/uk/atc/a02/"]', 
     nodeDetail: '[class="cp-page-node-detail__head-code"]', 
+    pageTitleThirdSubcategory: '[class="cp-page-title"]',
     quantityInDrugStores: '[class="cp-drug-item__quantity-in-pharmacies-text"]:nth-of-type(1)', 
-    minPriceFrom: '[class*="cp-text-lg"]:nth-of-type(1)'
+    minPriceFrom: '[class*="cp-text-lg"]:nth-of-type(1)', 
+    subCategory: '[class*="cp-mega-menu__item-category"]:nth-of-type(1)'
 }
 
 
@@ -155,9 +155,18 @@ export const innPage = {
 }
 
 export const atcPage = {
-    atcnClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(1)', 
-    atcLetter: '[class*="cp-mega-menu__item-category"]', 
-    thirdSubcategory: '[href="/uk/atc/a02a/"]'
+    atcClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(1)', 
+    thirdSubcategory: '[href="/uk/atc/a02a/"]', 
+    arrowToSecondSubCategoryAtc: '[data-e2e="components.nodes.rootNode.atc"]:nth-of-type(1)', 
+    arrowToThirdCategoryAtc: '[data-e2e="components.nodes.node.atc"] [href="/uk/atc/a02/"]'
+    
+} 
+
+export const babyFoodPage = {
+    babyFoodClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(6)', 
+    thirdSubcategory: '[href="/uk/dp/000c000000000000/"]', 
+    arrowToSecondSubCategoryBabyFood: '[data-e2e="components.nodes.rootNode.bfc"]:nth-of-type(1)', 
+    arrowToThirdCategoryBabyFood: '[data-e2e="components.nodes.node.bfc"]:nth-of-type(1)'
     
 } 
     
