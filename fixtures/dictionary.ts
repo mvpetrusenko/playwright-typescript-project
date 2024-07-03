@@ -64,7 +64,8 @@ export const filterAnaloguesResult = {
 }
 
 export const sorting = {
-  timeOnRoad: 'По часу в дорозі'
+  timeOnRoad: 'По часу в дорозі', 
+  fromCheap: 'Від дешевих'
 } 
 
 export const loginData = {

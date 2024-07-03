@@ -106,7 +106,13 @@ export const pricesPage = {
     buttonDecrease: '[class*="cp-quantity-panel-btn"]:nth-of-type(1)', 
     buttonIncrease: '[class*="cp-quantity-panel-btn"]:nth-of-type(2)', 
     counter: '[class*="cp-quantity-panel-counter"]', 
-    buttonInBasket: '[class="cp-block"] [class*="cp-badge"]'
+    buttonInBasket: '[class="cp-block"] [class*="cp-badge"]', 
+    buttonSorting: 'div.cp-offers-browser__wrapper-navigation > div:nth-child(2) > div', 
+    dropDownSorting: '[class*="cp-dropdown-opened"]', 
+    sortingFromCheap: '[class*="cp-dropdown-menu__item-text"]:nth-of-type(1)', 
+    drugPrice2: '[class="cp-offer-item__new-prices"]:nth-of-type(2)',
+    
+
 
 }
 

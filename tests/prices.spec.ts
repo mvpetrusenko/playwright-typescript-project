@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { changeGeoLocationPricesPage, navigatorTo } from '../pages/HomePage'; 
-import { goToPricesPage } from '../pages/PricesPage';
+import { goToPricesPage, sortFromCheap } from '../pages/PricesPage';
 import { basketPage, pricesPage } from '../fixtures/selectors';
 import { components, drugs, sorting, tabs } from '../fixtures/dictionary'; 
 
@@ -82,6 +82,14 @@ test.describe('Prices Tests', () => {
  
         await page.click(basketPage.buttonBasket); 
         await expect(page.locator(basketPage.emptyBasket)).toBeVisible();
+        
+    }); 
+
+    test('NC-TC-120: Check Sorting From Cheap', async ({ page }) => {
+
+        await goToPricesPage(page); 
+        await sortFromCheap(page);
+        
         
     }); 
 
