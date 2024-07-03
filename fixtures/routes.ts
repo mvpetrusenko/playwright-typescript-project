@@ -3,7 +3,8 @@ export const mainRoutes = {
     favorites: '/obrane/', 
     order: '/nove-zamovlenna/', 
     news: '/news/', 
-    archivedInstruction: '/info/309/latsipil-/'
+    archivedInstruction: '/info/309/latsipil-/', 
+    allDrugStores: '/stores/'
 
 } 
 

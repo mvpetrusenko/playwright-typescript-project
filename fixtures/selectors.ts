@@ -1,5 +1,6 @@
 export const mainPage = { 
-    logo: '[data-e2e="components.layout.logoDesktopGrd"]',
+    logo: '[data-e2e="components.layout.logoDesktopGrd"]', 
+    buttonAllDrugStores: '[data-e2e="layout.header.btnMapUkraine"]',
     inputSearch: 'input#searchInput:nth-of-type(1)', 
     buttonSearch: 'button.cp-form-group-search-btn-grd', 
     buttonAddress: '[data-e2e="layout.header.btnAddress"]', 
@@ -40,7 +41,9 @@ export const aboutDrugPage = {
     releaseFormBlock: '[data-e2e="components.reference.referenceDrugCharacteristicsSku"]', 
     blockInstruction: '[data-e2e="components.drugInstruction"]', 
     linkHowToUse: '[href="#howToUse"]', 
-    blockHowToUse: '[id="anchor-howToUse"]'
+    blockHowToUse: '[id="anchor-howToUse"]', 
+    minPriceFrom: '[class*="cp-text-lg"]', 
+    quantityInDrugStores: '[class="cp-product-detail-info__quantity-link"]', 
 
 } 
 
@@ -376,6 +379,14 @@ export const nosologicalReferenceBookPage = {
     referenceBooksContent: '[class*="cp-handbook-item__list-wrapper"]', 
     firstArticleItem: '[class="cp-article-item"]:nth-of-type(1)', 
     referenceBookChapter: '[data-e2e="components.library.handbookChapter"]'
-    
 
-}
+} 
+
+export const allDrugStoresPage = { 
+    buttonPlusZoom: '[class*="cp-map__control_zoom"] [class*="cp-map__control_btn"]:nth-of-type(1)', 
+    buttonMinusZoom: '[class*="cp-map__control_zoom"] [class*="cp-map__control_btn"]:nth-of-type(2)', 
+    defaultZoom: '[style*="scale(16384)"]',
+    zoomIn: '[style*="scale(16384)"]', 
+    zoomOut: '[style*="scale(8192)"]'
+    
+} 
