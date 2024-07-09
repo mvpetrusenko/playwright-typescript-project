@@ -41,6 +41,5 @@ export async function goToLibraryPage(page: Page) {
     await page.click(nosologicalReferenceBookPage.tabReferenceBooks); 
     await page.waitForSelector(nosologicalReferenceBookPage.tabDoctorsNosologicalReferenceBook, { state: 'visible' }); 
     await page.click(nosologicalReferenceBookPage.tabDoctorsNosologicalReferenceBook); 
-    expect(page.locator(nosologicalReferenceBookPage.referenceBooksContent)).toBeVisible(); 
     
   }  

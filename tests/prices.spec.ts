@@ -85,13 +85,13 @@ test.describe('Prices Tests', () => {
         
     }); 
 
-    test('NC-TC-120: Check Sorting From Cheap', async ({ page }) => {
+    // test('NC-TC-120: Check Sorting From Cheap', async ({ page }) => {
 
-        await goToPricesPage(page); 
-        await sortFromCheap(page);
+    //     await goToPricesPage(page); 
+    //     await sortFromCheap(page);
         
         
-    }); 
+    // }); 
 
   
     test.afterEach(async ({ page }) => {

@@ -13,7 +13,7 @@ test.describe('Reference Books Tests', () => {
     test('NC-TC-941: Go to Doctor`s Nosological Reference Book Page', async ({ page }) => { 
       await goToLibraryPage(page); 
       await goToReferenceBooksPage(page); 
-      await page.click(nosologicalReferenceBookPage.firstArticleItem); 
+      await page.click(nosologicalReferenceBookPage.articleItem); 
       await expect(page.locator(nosologicalReferenceBookPage.referenceBookChapter)).toBeVisible();
       
     }); 

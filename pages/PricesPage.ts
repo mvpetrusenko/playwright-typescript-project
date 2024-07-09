@@ -6,7 +6,7 @@ import { pricesPage, basketPage } from '../fixtures/selectors';
 
 
 export async function goToPricesPage(page: Page) {
-    await baseSearch(page, drugs.ascorbine); 
+    await baseSearch(page, drugs.risoptan); 
     await searchResults(page);
     await clickDrugItem(page); 
     await page.waitForSelector(pricesPage.tabPrices, { state: 'visible' });
@@ -32,9 +32,13 @@ export async function clickOrderButton(page: Page) {
     await page.click(pricesPage.sortingFromCheap);  
     expect(await page.textContent(pricesPage.buttonSorting)).toContain(sorting.fromCheap); 
     let minPriceFrom1 = parseInt(await page.textContent(pricesPage.drugPrice), 10); 
+    console.log("Extracted price text:", minPriceFrom1);
+    
     await page.waitForSelector(pricesPage.drugPrice2, { state: 'visible' });
-    let minPriceFrom2 = parseInt(await page.textContent(pricesPage.drugPrice2), 10);
+    let minPriceFrom2 = parseInt(await page.textContent(pricesPage.drugPrice2), 10); 
+    console.log("Extracted price text:", minPriceFrom2);
+    
     expect(minPriceFrom1).toBeGreaterThan(minPriceFrom2); 
-  
+
   }
     

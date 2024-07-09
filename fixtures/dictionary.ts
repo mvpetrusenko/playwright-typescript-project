@@ -1,5 +1,6 @@
 export const drugs = {
   ascorbine: 'аскорбінка', 
+  risoptan: 'різоптан',
   ascorbineFullName: 'Аскорбінка®-КВ таблетки 25 мг в етикетці зі смаком полуниці, №10', 
   lessThree: 'ас', 
   threeSymbolsUa: 'різ', 

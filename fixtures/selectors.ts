@@ -52,7 +52,7 @@ export  const instructionPage = {
     tabInstructionAboutDrug: '//li[1]/span/a', 
     sectionInstruction: '[data-e2e="components.drugInstruction"]',
     buttonNotAvailable: '[data-e2e="components.reference.notAvailable"]', 
-    buttonFindAnalogues: '[class*="cp-reference-detail-archived__btn-wrapper-analogs"]', 
+    buttonFindAnalogues: '[class*="cp-drug-archived__btn-wrapper-analogs"]', 
     sectionAnalogues: '[data-e2e="components.drugs.drugsBrowser"]', 
     tabDrugApplication: '[href="#application"]', 
     sectionDrugApplication: 'div#anchor-application', 
@@ -89,11 +89,12 @@ export const analoguePage = {
 
 export const pricesPage = {
     drugName: '[class="cp-offer-item__drug-name"]', 
-    drugPrice: '[class="cp-offer-item__new-prices"]', 
+    drugPrice: '[class*="cp-offer-item__active"] [class="cp-offer-item__new-prices"]', 
     tabPrices: '[class="cp-tabs__item-link"]:nth-of-type(1)', 
     offersBlock: '[data-e2e="components.offer.offersBrowser"]', 
     defaultSortingTab: '[class*="cp-dropdown-slot-text"]', 
     firstDrugStore: '[data-e2e="components.offer.offerItemV2"]:nth-of-type(1)', 
+    secondDrugStore: '[data-e2e="components.offer.offerItemV2"]:nth-of-type(2)',
     twentiethDrugStore: '[data-e2e="components.offer.offerItemV2"]:nth-of-type(20)', 
     twentyfirstDrugStore: '[data-e2e="components.offer.offerItemV2"]:nth-of-type(21)', 
     fortiethDrugStore: '[data-e2e="components.offer.offerItemV2"]:nth-of-type(40)', 
@@ -110,7 +111,8 @@ export const pricesPage = {
     buttonSorting: 'div.cp-offers-browser__wrapper-navigation > div:nth-child(2) > div', 
     dropDownSorting: '[class*="cp-dropdown-opened"]', 
     sortingFromCheap: '[class*="cp-dropdown-menu__item-text"]:nth-of-type(1)', 
-    drugPrice2: '[class="cp-offer-item__new-prices"]:nth-of-type(2)',
+    drugPrice2: ' [class*="cp-offer-item__price-text"] [class="cp-offer-item__new-prices"]:nth-of-type(2)', 
+    activeStoreDrugCard: '[class*="cp-offer-item__active"]'
     
 
 
@@ -431,9 +433,8 @@ export const medicalLiteraturePage = {
 export const nosologicalReferenceBookPage = { 
     tabReferenceBooks: "//a[contains(@href, 'handbooks')]", 
     tabDoctorsNosologicalReferenceBook: "//a[contains(@href, 'nozologia-dovidnyk')]", 
-    referenceBooksContent: '[class*="cp-handbook-item__list-wrapper"]', 
-    firstArticleItem: '[class="cp-article-item"]:nth-of-type(1)', 
-    referenceBookChapter: '[data-e2e="components.library.handbookChapter"]'
+    articleItem: '[class="cp-article-item"]:nth-of-type(1)', 
+    referenceBookChapter: '[class="cp-handbook-chapter-tabs__manuals-content__wrapper"]'
 
 } 
 
