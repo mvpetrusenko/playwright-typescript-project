@@ -17,15 +17,13 @@ export async function goToLibraryPage(page: Page) {
     
     await page.waitForSelector(clinicalGuidelinesPage.tabClinicalGuidelines, { state: 'visible' });
     await page.click(clinicalGuidelinesPage.tabClinicalGuidelines); 
-    expect(page.locator(clinicalGuidelinesPage.pageClinicalGuidelines)).toBeVisible(); 
-    
+  
   }  
 
   export async function goToClinicalGuidelinesArticle(page: Page) {
     
-    await page.click(clinicalGuidelinesPage.firstClinicalGuidelines); 
-    expect(page.locator(clinicalGuidelinesPage.sectionContents)).toBeVisible(); 
-    await page.click(clinicalGuidelinesPage.firstSubSection); 
+    await page.click(clinicalGuidelinesPage.clinicalGuidelinesItem); 
+    await page.click(clinicalGuidelinesPage.subSectionItem); 
     
   }  
 

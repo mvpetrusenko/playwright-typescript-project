@@ -224,7 +224,57 @@ export const manufacturersPage = {
     manufacturerItem: '[class="cp-maker-item__link"]', 
     manufactureInfo: '[class="cp-brand-header__info"]'
 
-}
+} 
+
+export const cyrillicLettersArrayManufacturers = { 
+
+    aLetter: '//span[text() = "А"]',
+    bLetter: '//span[text() = "Б"]',
+    vLetter: '//span[text() = "В"]',
+    gLetter: '//span[text() = "Г"]',
+    dLetter: '//span[text() = "Д"]',
+    eLetter: '//span[text() = "Е"]',
+    jLetter: '//span[text() = "Є"]',
+    iLetter: '//span[text() = "І"]',
+    kLetter: '//span[text() = "К"]',
+    llLetter: '//span[text() = "Л"]',
+    mLetter: '//span[text() = "М"]',
+    oLetter: '//span[text() = "О"]',
+    pLetter: '//span[text() = "П"]',
+    rLetter: '//span[text() = "Р"]',
+    sLetter: '//span[text() = "С"]',
+    tLetter: '//span[text() = "Т"]', 
+    yLetter: '//span[text() = "У"]',
+    fLetter: '//span[text() = "Ф"]',
+    yaLetter: '//span[text() = "Я"]'
+
+} 
+
+
+export const latinLettersArrayManufacturers = { 
+    aEngLetter: '//span[text() = "A"]', 
+    bEngLetter: '//span[text() = "B"]', 
+    cEngLetter: '//span[text() = "C"]',
+    dEngLetter: '//span[text() = "D"]',
+    eEngLetter: '//span[text() = "E"]',
+    fEngLetter: '//span[text() = "F"]',
+    gEngLetter: '//span[text() = "G"]',
+    hEngLetter: '//span[text() = "H"]',
+    iEngLetter: '//span[text() = "I"]',
+    jEngLetter: '//span[text() = "J"]', 
+    kEngLetter: '//span[text() = "K"]',
+    lEngLetter: '//span[text() = "L"]',
+    mEngLetter: '//span[text() = "M"]',
+    nEngLetter: '//span[text() = "N"]',
+    oEngLetter: '//span[text() = "O"]',
+    pEngLetter: '//span[text() = "P"]',
+    rEngLetter: '//span[text() = "R"]',
+    sEngLetter: '//span[text() = "S"]',
+    uEngLetter: '//span[text() = "U"]',
+    wEngLetter: '//span[text() = "W"]',
+    xEngLetter: '//span[text() = "X"]'
+
+} 
 
 export const cyrillicLettersArray = { 
 
@@ -362,11 +412,10 @@ export const libraryPage = {
 
 export const clinicalGuidelinesPage = {
     tabClinicalGuidelines: "//a[contains(@href, 'clinical-guidelines')]", 
-    pageClinicalGuidelines: '[data-e2e="pages.guidelinesList"]',
-    firstClinicalGuidelines: '[data-e2e="components.library.termItem"]:nth-of-type(1)', 
-    sectionContents: '[class*="cp-guideline-item__list-wrapper"]', 
-    firstSubSection: '[class*="cp-article-item"]', 
-    article: '[class*="cp-page-article-tabs__manuals-content__wrapper"]'
+    clinicalGuidelinesItem: '[data-e2e="components.library.termItem"]:nth-of-type(2)', 
+    subSectionItem: '[class*="cp-article-item"]:nth-of-type(1)', 
+    article: '[class="cp-page-article-tabs__manuals-content-text"]', 
+    articleTitle: '[class="cp-page-article-title"]'
 
 } 
 

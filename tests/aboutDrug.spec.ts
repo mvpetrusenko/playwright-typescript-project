@@ -116,7 +116,7 @@ test('NC-TC-80: Navigate to Instruction Section', async ({ page }) => {
 
 test('NC-TC-200: Change Minimum Drug Price After Changing Geolocation on Favorites Page', async ({ page }) => { 
 
-  await baseSearch(page, drugs.ascorbine); 
+  await baseSearch(page, drugs.forOrder); 
   await searchResults(page);
   await clickDrugItem(page);
 

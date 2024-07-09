@@ -17,7 +17,7 @@ test.describe('Main Page Tests', () => {
 
     }); 
 
-    test('NC-TC-225: Check Drug Photo is Clicable in Section "Top Drugs"', async ({ page }) => { 
+    test('NC-TC-225: Check Drug Photo is Clickable in Section "Top Drugs"', async ({ page }) => { 
 
         await clickTopDrugPhoto(page);
         const getTextContent = aboutDrugPage.tabAboutDrug; 

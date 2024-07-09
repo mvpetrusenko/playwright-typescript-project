@@ -1,13 +1,13 @@
 import { Page } from '@playwright/test'; 
-import { cyrillicLettersArray, latinLettersArray, mainPage, manufacturersPage } from '../fixtures/selectors'; 
+import { cyrillicLettersArray, cyrillicLettersArrayManufacturers, latinLettersArray, latinLettersArrayManufacturers, mainPage, manufacturersPage } from '../fixtures/selectors'; 
  
 
 
-type CyrillicLettersArrayKey = keyof typeof cyrillicLettersArray; 
-type LatinLettersArrayKey = keyof typeof latinLettersArray;
+type CyrillicLettersArrayKey = keyof typeof cyrillicLettersArrayManufacturers; 
+type LatinLettersArrayKey = keyof typeof latinLettersArrayManufacturers;
 
 export async function getRandomItemFromArrays(): Promise<string> {
-    const combinedArray = { ...cyrillicLettersArray, ...latinLettersArray };
+    const combinedArray = { ...cyrillicLettersArrayManufacturers, ...latinLettersArrayManufacturers };
     const keys = Object.keys(combinedArray) as (CyrillicLettersArrayKey | LatinLettersArrayKey)[];
     const randomKey = keys[Math.floor(Math.random() * keys.length)];
     return combinedArray[randomKey];

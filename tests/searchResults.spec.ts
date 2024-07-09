@@ -55,7 +55,8 @@ test('NC-TC-258: Auotocomplition 3 Symbols', async ({ page }) => {
   await baseSearch(page, drugs.threeSymbolsUa); 
   expect(await page.textContent(searchResultsPage.searchMessage)).toContain(messages.searchMessageUa); 
   await expect(page.locator(searchResultsPage.searchMessage)).toBeHidden();
-  expect(await page.textContent(searchResultsPage.dropDownSearchResult)).toContain(drugs.highlightedTermUa); 
+  expect((await page.textContent(searchResultsPage.dropDownSearchResult))).toContain(drugs.highlightedTermUa); 
+
   await page.click(mainPage.buttonSearch);
 
   await changeLocalization(page, 'ru'); 

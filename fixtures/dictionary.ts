@@ -4,11 +4,12 @@ export const drugs = {
   lessThree: 'ас', 
   threeSymbolsUa: 'різ', 
   threeSymbolsRu: 'риз',
-  highlightedTermUa: 'РIЗ', 
+  highlightedTermUa: 'РІЗАМІГРЕН', 
   highlightedTermRu: 'РИЗ',
   substringPrice: ' грн', 
   quantityMore: '1', 
-  quantityLess: '0'
+  quantityLess: '0', 
+  forOrder: 'лопераміду гідрохлорид'
 
 } 
 
@@ -36,7 +37,8 @@ export const components = {
   thirdSubcategoryNodeBabyFood: "М'ясні пюре (1 інгредієнт)", 
   thirdSubcategoryNodeDietarySupplements: 'Дієтичні добавки, що містять цинк', 
   thirdSubcategoryNodeCosmetics: 'Дезодоранти', 
-  thirdSubcategoryNodeMedicalProducts: 'Дзеркала гінекологічні'
+  thirdSubcategoryNodeMedicalProducts: 'Дзеркала гінекологічні', 
+  titleCommonPoints: 'Загальні положення'
 
 } 
 

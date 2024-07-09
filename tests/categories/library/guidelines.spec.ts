@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import { navigatorTo } from '../../../pages/HomePage'; 
 import { clinicalGuidelinesPage } from '../../../fixtures/selectors'; 
 import { goToClinicalGuidelinesPage, goToLibraryPage, goToClinicalGuidelinesArticle } from '../../../pages/LibraryPage'; 
+import { components } from '../../../fixtures/dictionary';
 
 
 
@@ -14,8 +15,9 @@ test.describe('Guidelines Tests', () => {
  
       await goToLibraryPage(page); 
       await goToClinicalGuidelinesPage(page); 
-      await goToClinicalGuidelinesArticle(page);
-      await expect(page.locator(clinicalGuidelinesPage.article)).toBeVisible();
+      await goToClinicalGuidelinesArticle(page); 
+      await expect(page.locator(clinicalGuidelinesPage.article)).toBeVisible(); 
+      //expect(await page.textContent(clinicalGuidelinesPage.articleTitle)).toContain(components.titleCommonPoints); 
       
     });
   
