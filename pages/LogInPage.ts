@@ -5,8 +5,8 @@ import { buyerProfilePage, mainPage } from '../fixtures/selectors';
 
 export async function goToLoginPage(page: Page) { 
     await page.click(mainPage.buttonLogin); 
-    await page.click(buyerProfilePage.buyerLogin); 
-    await page.waitForSelector(buyerProfilePage.formLogin, { state: 'visible' }); 
+    //await page.click(buyerProfilePage.buyerLogin); 
+    //await page.waitForSelector(buyerProfilePage.formLogin, { state: 'visible' }); 
     
 } 
 

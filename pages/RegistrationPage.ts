@@ -7,6 +7,7 @@ import { goToLoginPage } from '../pages/LogInPage';
 export async function goToRegistrationPage(page: Page) {
     
     await goToLoginPage(page); 
+    await page.waitForSelector(buyerProfilePage.buttonRegistration, { state: 'visible' });
     await page.click(buyerProfilePage.buttonRegistration); 
     await page.waitForSelector(registrationPage.formRegistration, { state: 'visible' });
 

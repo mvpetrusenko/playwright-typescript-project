@@ -82,10 +82,12 @@ test.describe('About Drug Page Tests', () => {
     await baseSearch(page, drugs.ascorbine); 
     await searchResults(page);
     await clickDrugItem(page); 
-
+    
     await expect(page.locator(aboutDrugPage.firstDosingUnit)).toBeVisible(); 
     const firstUnitUrl = page.url();
     await page.click(aboutDrugPage.secondDosingUnit); 
+    await expect(page.locator(aboutDrugPage.tabAboutDrug)).toBeVisible(); 
+
     const secondUnitUrl = page.url(); 
     expect(firstUnitUrl).not.toEqual(secondUnitUrl);
 

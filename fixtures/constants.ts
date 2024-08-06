@@ -1,4 +1,4 @@
 export const mainConfig = {
-    baseUrl: 'https://compendium.com.ua'
+    baseUrl: 'https://new-dev.compendium.com.ua'
 }; 
 

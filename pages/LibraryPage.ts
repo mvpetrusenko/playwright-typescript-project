@@ -31,6 +31,7 @@ export async function goToLibraryPage(page: Page) {
     
     await page.waitForSelector(medicalLiteraturePage.tabMedicalLiterature, { state: 'visible' });
     await page.click(medicalLiteraturePage.tabMedicalLiterature); 
+    await expect(page.locator(medicalLiteraturePage.pageTitle)).toBeVisible({ timeout: 20000 });
     expect(page.locator(medicalLiteraturePage.pageTitle)).toBeVisible(); 
     
   }  

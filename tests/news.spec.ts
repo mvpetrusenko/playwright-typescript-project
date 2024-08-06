@@ -22,6 +22,7 @@ test.describe('News Page Tests', () => {
     test('NC-TC-966: Redirection After All News Button Click', async ({ page }) => { 
         
         await page.click(mainPage.buttonAllNews); 
+        await expect(page.locator(mainRoutes.news)).toBeVisible({ timeout: 20000 });
         expect(page.url()).toContain(mainRoutes.news);  
         expect(await page.textContent(newsPage.titleAllNews)).toContain(components.allNews); 
 

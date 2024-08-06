@@ -15,7 +15,7 @@ export const mainPage = {
     firstResultPhoto: '[href="/dec/270555/66303/"]:nth-of-type(1)',
     ruSwitcher: '[data-e2e="layout.themeSwitcher.ukrLight"]', 
     uaSwitcher: '[data-e2e="layout.themeSwitcher.ukrDark"]', 
-    buttonLogin: '[data-e2e="layout.header.btnLogin"]', 
+    buttonLogin: '[href="/uk/vhid/"]', 
     buttonFavorites: '[data-e2e="layout.header.btnFavorites"]',
     buttonMedExpertProfile: '[class*="cp-auth__list-loginDoctor"]', 
     buttonCategories: 'button#headerCategoryBtn', 
@@ -42,7 +42,7 @@ export const aboutDrugPage = {
     blockInstruction: '[data-e2e="components.drugInstruction"]', 
     linkHowToUse: '[href="#howToUse"]', 
     blockHowToUse: '[id="anchor-howToUse"]', 
-    minPriceFrom: '[class*="cp-text-lg"]', 
+    minPriceFrom: '[class="cp-product-detail-info__price-wrapper"]', 
     quantityInDrugStores: '[class="cp-product-detail-info__quantity-link"]', 
 
 } 
@@ -161,7 +161,7 @@ export const categories = {
 
 
 export const innPage = {
-    innClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(2)', 
+    innClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(3)', 
     activeLetter: 'a[class*="cp-alphabet-list__link-active"]'
 }
 
@@ -174,7 +174,7 @@ export const atcPage = {
 } 
 
 export const babyFoodPage = {
-    babyFoodClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(6)', 
+    babyFoodClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(7)', 
     thirdSubcategory: '[href="/uk/dp/000c000000000000/"]', 
     arrowToSecondSubCategoryBabyFood: '[data-e2e="components.nodes.rootNode.bfc"]:nth-of-type(1)', 
     arrowToThirdCategoryBabyFood: '[data-e2e="components.nodes.node.bfc"]:nth-of-type(1)'
@@ -182,7 +182,7 @@ export const babyFoodPage = {
 } 
 
 export const dietarySupplementsPage = {
-    dietarySupplementsClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(3)', 
+    dietarySupplementsClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(4)', 
     thirdSubcategory: '[data-e2e="components.nodes.node.fsc"] [href="/uk/bad/000700020000000a/"]', 
     arrowToSecondSubCategoryDietarySupplements: '[data-e2e="components.nodes.rootNode.fsc"] [href="/uk/bad/00070002/"]', 
     arrowToThirdCategoryDietarySupplements: '[data-e2e="components.nodes.node.fsc"] [href="/uk/bad/000700020000/"]'
@@ -191,7 +191,7 @@ export const dietarySupplementsPage = {
 
 
 export const cosmeticsPage = {
-    cosmeticsClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(4)', 
+    cosmeticsClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(5)', 
     thirdSubcategory: '[href="/uk/kos/0009000100050000/"]', 
     arrowToSecondSubCategoryCosmetics: '[data-e2e="components.nodes.rootNode.csc"] [href="/uk/kos/00090001/"]', 
     arrowToThirdCategoryCosmetics: '[data-e2e="components.nodes.node.csc"] [href="/uk/kos/000900010005/"]'
@@ -199,7 +199,7 @@ export const cosmeticsPage = {
 } 
 
 export const medicalProductsPage = {
-    medicalProductsClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(7)', 
+    medicalProductsClassification: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(8)', 
     thirdSubcategory: '[href="/uk/med/000d000000000000/"]', 
     arrowToSecondSubCategoryMedicalProducts: '[data-e2e="components.nodes.rootNode.mpc"] [href="/uk/med/000d0000/"]', 
     arrowToThirdCategoryMedicalProducts: '[data-e2e="components.nodes.node.mpc"] [href="/uk/med/000d00000000/"]'
@@ -214,13 +214,13 @@ export const newsPage = {
 }
 
 export const alphabeticalIndexPage = {
-    alphabeticalIndex: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(8)', 
+    alphabeticalIndex: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(9)', 
     homeBreadcrumbs: '[data-e2e="components.ui.breadcrumbs.breadcrumbsItem"]:nth-of-type(1)', 
     activeLetter: 'a[class*="cp-alphabet-list__link-active"]' 
 } 
 
 export const manufacturersPage = {
-    manufacturers: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(9)', 
+    manufacturers: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(10)', 
     homeBreadcrumbs: '[data-e2e="components.ui.breadcrumbs.breadcrumbsItem"]:nth-of-type(1)', 
     activeLetter: 'a[class*="cp-alphabet-list__link-active"]', 
     manufacturerItem: '[class="cp-maker-item__link"]', 
@@ -379,7 +379,7 @@ export const buyerProfilePage = {
     hiddenPassword: '[class*="cp-auth-form__group-password"] [type="password"]', 
     invalidLoginMessage: '[class="cp-auth-form__message"]', 
     buttonResetPassword: '[href="/uk/vidnovity-parol/"]', 
-    buttonRegistration: '[href="/uk/reyestraciya/"]'
+    buttonRegistration: '[class="cp-auth-form__footer"] [class*="cp-btn-secondary"]'
 
 } 
 
@@ -407,7 +407,7 @@ export const profilePage = {
 }
 
 export const libraryPage = {
-    libraryTab: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(10)', 
+    libraryTab: 'button[class*="cp-mega-menu-modal__category-item"]:nth-of-type(11)', 
     libraryHeader: '[data-e2e="components.library.libraryHeader"]'
 
 }

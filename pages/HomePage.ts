@@ -6,6 +6,9 @@ import { components } from '../fixtures/dictionary';
 import { mainRoutes } from '../fixtures/routes'; 
 
 
+// npx playwright test --ui 
+// npx playwright test --ui
+
 export async function changeGeoLocationPricesPage(page: Page, city: string) { 
 
   await page.waitForSelector(mainPage.buttonAddress, { state: 'visible' });

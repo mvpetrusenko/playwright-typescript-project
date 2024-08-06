@@ -21,7 +21,7 @@ test.describe('Main Page Tests', () => {
 
         await clickTopDrugPhoto(page);
         const getTextContent = aboutDrugPage.tabAboutDrug; 
-        expect(await page.textContent(getTextContent)).toContain(tabs.aboutDrugTabUa); 
+        expect(await page.textContent(getTextContent)).toContain(tabs.insctructionTabUa); 
  
 
     }); 
